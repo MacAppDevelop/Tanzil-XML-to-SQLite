@@ -15,7 +15,7 @@ The reason we don't just use SQL (MySQL Dumps) files from Tanzil directly, is be
 
 # License
 
-The code and application itself are licensed under Apache License 2.0
+The code and application itself are licensed under Apache License 2.0 (This application is still in Alpha and in testing process. If you use it, kindly note that double checking everything is mandatory to avoid any changes in the original Quran text)
 
 But XML files downloaded from Tanzil have their own terms and condition.
 
@@ -26,4 +26,8 @@ Terms are mentioned below but please read about additional conditions [in this p
 Permission is granted to copy and distribute verbatim copies of the Quran text provided here, but changing the text is not allowed.
 
 The text can be used in any website or application, provided that its source [(Tanzil Project)](https://tanzil.net/download/) is clearly indicated, and a link is made to [tanzil.net](https://tanzil.net) to enable users to keep track of changes. 
+
+# Warning
+
+This application is still in Alpha and in testing process. If you use it, kindly note that double checking everything is mandatory to avoid any changes in the original Quran text
 
