@@ -13,6 +13,7 @@
 		0D7BFDC129E9B88000BCD9F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D7BFDC029E9B88000BCD9F6 /* Preview Assets.xcassets */; };
 		0D7BFDCB29E9B94200BCD9F6 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BFDCA29E9B94200BCD9F6 /* Converter.swift */; };
 		0D7BFDCD29E9CD2E00BCD9F6 /* Aya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7BFDCC29E9CD2E00BCD9F6 /* Aya.swift */; };
+		0DD18E7329EB214000EC5CD2 /* BismillahTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD18E7229EB214000EC5CD2 /* BismillahTypes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0D7BFDC229E9B88000BCD9F6 /* Tanzil_XML_to_SQLite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tanzil_XML_to_SQLite.entitlements; sourceTree = "<group>"; };
 		0D7BFDCA29E9B94200BCD9F6 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 		0D7BFDCC29E9CD2E00BCD9F6 /* Aya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aya.swift; sourceTree = "<group>"; };
+		0DD18E7229EB214000EC5CD2 /* BismillahTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BismillahTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				0D7BFDBB29E9B87F00BCD9F6 /* ContentView.swift */,
 				0D7BFDCA29E9B94200BCD9F6 /* Converter.swift */,
 				0D7BFDCC29E9CD2E00BCD9F6 /* Aya.swift */,
+				0DD18E7229EB214000EC5CD2 /* BismillahTypes.swift */,
 				0D7BFDBD29E9B88000BCD9F6 /* Assets.xcassets */,
 				0D7BFDC229E9B88000BCD9F6 /* Tanzil_XML_to_SQLite.entitlements */,
 				0D7BFDBF29E9B88000BCD9F6 /* Preview Content */,
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD18E7329EB214000EC5CD2 /* BismillahTypes.swift in Sources */,
 				0D7BFDBC29E9B87F00BCD9F6 /* ContentView.swift in Sources */,
 				0D7BFDCD29E9CD2E00BCD9F6 /* Aya.swift in Sources */,
 				0D7BFDCB29E9B94200BCD9F6 /* Converter.swift in Sources */,
@@ -276,17 +280,18 @@
 				CODE_SIGN_ENTITLEMENTS = "Tanzil XML to SQLite/Tanzil_XML_to_SQLite.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Tanzil XML to SQLite/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MacAppDevelop.Tanzil-XML-to-SQLite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -302,17 +307,18 @@
 				CODE_SIGN_ENTITLEMENTS = "Tanzil XML to SQLite/Tanzil_XML_to_SQLite.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Tanzil XML to SQLite/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MacAppDevelop.Tanzil-XML-to-SQLite";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

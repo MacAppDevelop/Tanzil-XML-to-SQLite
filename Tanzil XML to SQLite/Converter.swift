@@ -23,11 +23,15 @@ class Converter: NSObject, XMLParserDelegate, ObservableObject {
     @Published var showError: Bool = false
     @Published var errorMessage: String = ""
     
-    func convertSelectedFile() {
+    private var bismillahType: String = BismillahTypes.simple
+    
+    func convertSelectedFile(selectedBismillahType: String) {
         guard let data = xmlData else {
             triggerError("File content wasn't set correctly!")
             return
         }
+        
+        bismillahType = selectedBismillahType
         
         let xmlParser = XMLParser(data: data)
         xmlParser.delegate = self
@@ -82,7 +86,7 @@ extension Converter {
     }
     
     private func addBismillahAsAya0ToAllSurahsExceptFatihaAndTawbah() {
-        let bismillah = "بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ"
+        let bismillah = bismillahType
         for i in 2...114 {
             if i == 9 { // No Bismillah in at-Tawbah
                 continue

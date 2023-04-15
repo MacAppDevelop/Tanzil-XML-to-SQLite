@@ -2,7 +2,7 @@
 //  Aya.swift
 //  Tanzil XML to SQLite
 //
-//  Created by  No one on 4/14/23.
+//  Created by No one on 4/14/23.
 //
 
 import Foundation

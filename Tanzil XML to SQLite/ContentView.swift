@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Tanzil XML to SQLite
 //
-//  Created by  No one on 4/14/23.
+//  Created by No one on 4/14/23.
 //
 
 import SwiftUI
@@ -14,6 +14,8 @@ struct ContentView: View {
     @State private var surahColumnName: String = "surah_number"
     @State private var ayaColumnName: String = "aya_number"
     @State private var textColumnName: String = "text"
+    
+    @State private var bismillahType: String = BismillahTypes.simple
     
     var body: some View {
         VStack {
@@ -53,15 +55,25 @@ struct ContentView: View {
             Text("Selected File: \(fileName)")
         }
         
-        HStack {
-            Button("Convert to SQLite import file") {
-                converter.convertSelectedFile()
+        VStack {
+            Picker("Bismillah Type", selection: $bismillahType) {
+                Text("Simple & Simple (Plain) - \(BismillahTypes.simple)").tag(BismillahTypes.simple)
+                Text("Simple (Minimal) & Uthmani (Minimal) - \(BismillahTypes.simpleMin)").tag(BismillahTypes.simpleMin)
+                Text("Simple (Clean) - \(BismillahTypes.simpleClean)").tag(BismillahTypes.simpleClean)
+                Text("Uthmani - \(BismillahTypes.uthmani)").tag(BismillahTypes.uthmani)
             }
-            .buttonStyle(.borderedProminent)
             
-            Button("Cancel", role: .cancel) {
-                converter.unsetSelectedFile()
+            HStack {
+                Button("Convert to SQLite import file") {
+                    converter.convertSelectedFile(selectedBismillahType: bismillahType)
+                }
+                .buttonStyle(.borderedProminent)
+                
+                Button("Cancel", role: .cancel) {
+                    converter.unsetSelectedFile()
+                }
             }
+            .padding()
         }
         .padding()
     }
